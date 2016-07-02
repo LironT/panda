@@ -1,58 +1,87 @@
 body {
-  padding: 30px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 100px;
+  background-color: #F8F8F8 !important;
 }
 
-h2 {
-  margin:0 0 .5em 0;
+.margin-bottom {
+  margin-bottom: 15px;
 }
 
-a {
-  color: #00B7FF;
+textarea {
+  resize: none;
 }
 
-#wrapper {
-  padding-left:312px;
-  position:relative;
+.form-control.ng-invalid {
+  border: solid 1px #ff0000;
 }
 
-#userList {
-  margin:0 0 30px 0;
-}
-#userList table {
-  border-collapse:separate;
-  border-spacing:1px;
-  background:#CCC;
-}
-#userList table th {
-  background:#EEE;
-  font-weight:600;
-  padding:10px 20px;
-  text-align:center;
-}
-#userList table tbody {
-  padding:0; margin:0;
-  border-collapse:collapse;
-  border-spacing:0px;
-}
-#userList table td {
-  background:#FFF;
-  padding:5px 10px;
-  text-align:center;
+/*controls*/
+.comments {
+  width: 450px;
+  border: solid 1px #EEEEEE;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-#userInfo {
-  width:250px;
-  position:absolute;
-  top:0; left:0;
-}
-#userInfo p {
-  padding:15px;
-  border:1px solid #CCC;
-  background:rgba(80,120,255,0.05);
+.comments-form{
+  display: flex;
+  flex-direction: column;
+  background-color: #EEEEEE;
+  padding: 20px;
 }
 
-fieldset {
-  border:0;
-  padding:0; margin:0;
+.comments .form-control {
+  border-radius: 0;
+  border: solid 1px #C6C6C6;
+}
+
+.comments-form div {
+  text-align: end;
+}
+
+.comments-form button {
+  width: 80px;
+  background-color: #40A7DE;
+  border: none;
+}
+
+.comments-list {
+  padding: 40px 20px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-list .has-feedback .form-control {
+  padding-left: 35px;
+  padding-right: 5px;
+}
+
+.comments-list .has-feedback .form-control-feedback {
+  left: 0;
+  color: #838383;
+}
+
+.comment-item img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.comments-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.message-container {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 350px;
+}
+
+.message-container span {
+  color: #838383;
 }

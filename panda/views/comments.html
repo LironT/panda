@@ -1,0 +1,18 @@
+<div class="comments">
+	<div ng-form="addNewComment" class="comments-form">
+		<input type="email" class="form-control margin-bottom" ng-model="newComment.userEmail" placeholder="Email"/>
+
+		<textarea class="form-control margin-bottom" ng-model="newComment.comment" placeholder="Message"
+							ng-class="{'ng-invlid': !newComment.comment || newComment.comment.length < 2}"></textarea>
+
+		<div>
+			<button type="submit" class="btn btn-primary margin-bottom" ng-click="addComment(newComment)"
+							ng-disabled="addNewComment.$invalid || !newComment.comment || newComment.comment.length < 2">
+				Submit
+			</button>
+		</div>
+
+	</div>
+
+	<div comment-list="comments"></div>
+</div>

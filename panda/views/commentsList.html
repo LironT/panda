@@ -1,0 +1,16 @@
+<div class="comments-list">
+	<div class="has-feedback has-feedback-left margin-bottom">
+		<input type="text" class="form-control" placeholder="Filter" ng-model="filterText" />
+		<i class="glyphicon glyphicon-search form-control-feedback"></i>
+	</div>
+
+	<div class="comments-container">
+		<div class="comment-item margin-bottom" ng-repeat="comment in comments | filter: filterText">
+			<img src="{{comment.gravatarSRC}}"/>
+			<span class="message-container">
+				<b>{{comment.userEmail}}</b><br>
+				<span>{{comment.comment}}</span>
+			</span>
+		</div>
+	</div>
+</div>
